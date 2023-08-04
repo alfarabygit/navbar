@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- BOXICONS -->
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- CSS Manual -->
+    <link rel="stylesheet" href="../style/style7.css" />
+    <title>Navbar Dropdown Menu Responsive</title>
+  </head>
+  <body>
+    <!--=============== HEADER ===============-->
+    <header class="header">
+      <nav class="nav container">
+        <div class="nav__data">
+          <a href="#" class="nav__logo"> <i class="bx bx-code"></i> IndraCode </a>
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-menu nav__hamburger"></i>
+            <i class="bx bx-x nav__close"></i>
+          </div>
+        </div>
+
+        <!--=============== NAV MENU ===============-->
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="#" class="nav__link">Company</a></li>
+            <!--=============== DROPDOWN 1 ===============-->
+
+            <li class="dropdown__item">
+              <div class="nav__link">Analytics <i class="bx bx-chevron-down dropdown__arrow"></i></div>
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="#" class="dropdown__link"> <i class="bx bx-pie-chart"></i>Overview </a>
+                </li>
+
+                <li>
+                  <a href="#" class="dropdown__link"> <i class="bx bx-sort"></i>Transactions </a>
+                </li>
+                <!--=============== SUB DROPDOWN MENU ===============-->
+                <li class="dropdown__subitem">
+                  <div class="dropdown__link"><i class="bx bx-bar-chart"></i>Reports<i class="bx bx-book-add dropdown__add"></i></div>
+
+                  <ul class="dropdown__submenu">
+                    <li>
+                      <a href="#" class="dropdown__sublink"><i class="bx bx-file"></i>Documents</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__sublink"><i class="bx bx-wallet"></i>Payments</a>
+                    </li>
+                    <li>
+                      <a href="#" class="dropdown__sublink"><i class="bx bxs-badge-dollar"></i>Refunds</a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="nav__link">Products</a></li>
+            <!--=============== DROPDOWN 2 ===============-->
+            <li class="dropdown__item">
+              <div class="nav__link">Users<i class="bx bx-chevron-down dropdown__arrow"></i></div>
+              <ul class="dropdown__menu">
+                <li>
+                  <a href="#" class="dropdown__link"> <i class="bx bx-user"></i>Profiles </a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown__link"><i class="bx bx-lock"></i>Accounts</a>
+                </li>
+                <li>
+                  <a href="#" class="dropdown__link"><i class="bx bx-message-square-dots"></i>Messages</a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <script src="../script/app6.js"></script>
+  </body>
+</html>
