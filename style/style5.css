@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  background: #fefefe;
+}
+header {
+  width: 100%;
+  height: 80px;
+  background: #f3f1ed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+.logo {
+  font-weight: bold;
+  font-size: 1.6rem;
+  color: #11110f;
+}
+.hamburger {
+  display: none;
+}
+.nav-bar ul {
+  display: flex;
+}
+.nav-bar ul li a {
+  display: block;
+  color: #3f3d38;
+  font-size: 1.3rem;
+  padding: 0.6rem 1.3rem;
+  border-radius: 3rem;
+  transition: 0.3s;
+  margin: 0 0.3rem;
+}
+.nav-bar ul li a:hover {
+  color: #f3f1ed;
+  background: #11110f;
+}
+.nav-bar ul li a:active {
+  color: #f3f1ed;
+  background: #11110f;
+}
+
+/* Media queries responsive navbar */
+@media screen and (max-width: 1320px) {
+  header {
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  header {
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 4px;
+    background: #11110f;
+    margin: 0.5rem 0;
+  }
+  .nav-bar {
+    height: 0;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background: #ddddd4;
+    transition: 0.3s;
+    overflow: hidden;
+  }
+  .nav-bar.active {
+    height: 500px;
+  }
+  .nav-bar ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+  .nav-bar ul li a {
+    margin-bottom: 1rem;
+  }
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+}
